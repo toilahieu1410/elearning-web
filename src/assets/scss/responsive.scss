@@ -1,0 +1,45 @@
+@media screen and (min-width: 1200px) and (max-width: 1399px){
+    //header
+    //login
+    .form-login {
+        background-image: url(../img/e-leaning-2.png) !important;
+        .loginRegister {
+            right: 100px !important;
+        }
+    }
+}
+@media screen and (max-width: 1199px) {
+    //header
+    .nav-text span {
+         margin-left: 0 !important;
+    }
+
+
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    //header
+    //calendar 
+    .rbc-month-row {
+        overflow: inherit;
+        min-height: 120px;
+      }
+    //section-content
+    .section-content {
+        height: 80vh !important;
+        .banner-footer {
+            .banner-details {
+                .banner-card {
+                    padding: 20px !important;
+                    .banner-contents {
+                        h2 {
+                            font-size: 20px !important;
+                        }
+           
+                    }
+                }
+            }
+        }
+    }
+}

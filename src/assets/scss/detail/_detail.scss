@@ -1,0 +1,171 @@
+.detail {
+  min-height: calc(100vh - 350px);
+  .list-courses-detail {
+    .page-sidebar {
+      position: relative;
+      width: 80%;
+      margin-bottom: 30px;
+      border: 2px solid #e6ebf1;
+      border-radius: 0.4rem;
+      padding: 2rem 1rem;
+      ul {
+        li {
+          input.checkbox-custom {
+            overflow: visible;
+            opacity: 0;
+            position: absolute;
+          }
+          input.checkbox-custom:checked + .checkbox-custom-label {
+            &::before {
+              background: $color-default;
+              border-radius: 2px;
+              box-shadow: inset 0 0 0 4px #fff;
+            }
+          }
+          .checkbox-custom-label {
+            margin: 5px 0;
+            font-size: $font-size-default;
+            &::before {
+              content: "";
+              background: #fff;
+              border: 2px solid #d8dfe6;
+              display: inline-block;
+              vertical-align: middle;
+              width: 20px;
+              height: 20px;
+              border-radius: 3px;
+              padding: 2px;
+              margin-right: 10px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    .course-watched {
+      position: relative;
+      width: 80%;
+      margin-bottom: 30px;
+      border: 2px solid #e6ebf1;
+      border-radius: 0.4rem;
+      padding: 2rem 1rem;
+      .product-item {
+        .product-item-image {
+          margin-right: $gap;
+          img {
+            object-fit: cover;
+            float: left;
+            margin-right: 20px;
+            margin-left: 0;
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+    .all-course-card {
+      width: 100%;
+      background: #fff;
+      border-radius: 0.4rem;
+      overflow: hidden;
+      margin-bottom: 30px;
+      position: relative;
+      transition: all ease 0.4s;
+      border: 1px solid #e8ebf1;
+      .all-course-image {
+        overflow: hidden;
+        position: relative;
+        img {
+          height: 100vh;
+          max-height: 300px;
+        }
+      }
+      .all-course-content {
+        background-color: #fff;
+        .all-course-title {
+          padding: 20px 20px 5px;
+          h6 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            max-height: 70px;
+            line-height: 1.5rem;
+
+            font-weight: 700;
+          }
+          p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            max-height: 70px;
+            line-height: 1.5rem;
+          }
+        }
+        .all-course-info {
+          padding: 10px 20px;
+          ul {
+            li {
+              display: flex;
+              align-items: center;
+              color: #4a5874;
+         
+            }
+          }
+        }
+        .all-course-footer {
+          padding: 1rem 1rem;
+          width: 100%;
+          display: flex;
+          vertical-align: middle;
+          align-items: center;
+          border-top: 1px solid #f0f1f5;
+          .all-course-author {
+            flex: 1 1;
+            display: flex;
+            align-items: center;
+            .all-course-author-image {
+              max-width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: inline-block;
+              overflow: hidden;
+              margin-right: 10px;
+            }
+            h6 {
+              margin: 0;
+              font-size: 13px;
+              font-weight: 600;
+              opacity: 1;
+            }
+          }
+          .all-course-lecture {
+            padding: 6px 15px;
+            font-size: 13px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background: rgba(30, 173, 107, 0.1);
+            border-radius: 50px;
+            color: #1ead6b;
+          }
+        }
+        span {
+          margin-left: 5px;
+          font-size: 13px;
+        }
+      }
+    }
+    .course-item-list {
+      .course-item-image {
+        img {
+          object-fit: cover;
+          height: auto;
+        }
+      }
+    }
+  }
+}
